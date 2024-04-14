@@ -1,0 +1,9 @@
+[google_sheets]
+credentials_file_path = ""
+spreadsheet_key = ""
+
+[message_queue]
+url = ""
+
+[telegram_bot]
+token = ""
