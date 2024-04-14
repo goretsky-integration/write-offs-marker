@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "write-offs-marker"
+version = "1.0.0"
+description = ""
+authors = ["Eldos <eldos.baktybekov@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "write_offs_marker"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gspread = "^6.1.0"
+faststream = {extras = ["rabbit"], version = "^0.4.7"}
+aiogram = "^3.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
