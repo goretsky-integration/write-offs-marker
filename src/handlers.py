@@ -27,8 +27,12 @@ async def on_event(
     if is_marked:
         await telegram_bot_context.answer_checkbox_marked(
             callback_query_id=event.callback_query_id,
+            chat_id=event.chat_id,
+            message_id=event.message_id,
         )
     else:
         await telegram_bot_context.answer_checkbox_could_not_be_marked(
             callback_query_id=event.callback_query_id,
+            chat_id=event.chat_id,
+            message_id=event.message_id,
         )
